@@ -2,8 +2,17 @@ name: Vite CI
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - main
+      - master
+      - "feature/**"
+      - "bugfix/**"
   pull_request:
+    branches:
+      - main
+      - master
+      - "feature/**"
+      - "bugfix/**"
 
 jobs:
   build-test:
